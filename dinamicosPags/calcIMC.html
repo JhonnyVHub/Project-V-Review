@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="../bootcss/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../bootjs/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Atividade PW I</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../definicoesPags/htmlDef.html">HTML</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/jsDef.html">JS</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/cssDef.html">CSS</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/apiDef.html">API</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../definicoesPags/cSharpDef.html">C#</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../definicoesPags/merDef.html">MER</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/derDef.html">DER</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dinâmicos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="valDados.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="calcIMC.html">Calculo de IMC</a></li>
+              <li><a class="dropdown-item" href="calcComp.html">Calculo de Juros Compostos</a></li>
+              <li><a class="dropdown-item" href="compPrecos.html">Composição de Preços</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="cssDL.html">CSS Dark/Light</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div><p></p></div>
+      <div class="container col-4 border border-2">
+
+        <div class="text-center">
+        <div><p></p></div>
+          <h5>CALCULAR IMC</h5>
+        </div>
+
+        <form action="" method="post">
+          <label for="">PESO:</label>
+          <input type="text" name="peso" id="peso" class="form-control" placeholder="..." maxlength="7">
+
+          <label for="">ALTURA:</label>
+          <input type="text" name="altura" id="altura" class="form-control" placeholder="0.00" maxlength="5">
+        </form>
+        <div><p></p></div>
+        <button name="btnImc" id="btnImc" class="btn btn-success container" onclick="imc()">CALCULAR</button>
+        <div><p></p></div>
+
+      </div>
+</body>
+</html>

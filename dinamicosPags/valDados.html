@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validação de Dados</title>
+  <!-- "../" serve para puxar um arquivo (ou linkar) com algo fora da pasta do seu arquivo atual -->
+  <link rel="stylesheet" href="../bootcss/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../bootjs/bootstrap.bundle.min.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Atividade PW I</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../definicoesPags/htmlDef.html">HTML</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/jsDef.html">JS</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/cssDef.html">CSS</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/apiDef.html">API</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../definicoesPags/cSharpDef.html">C#</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../definicoesPags/merDef.html">MER</a></li>
+              <li><a class="dropdown-item" href="../definicoesPags/derDef.html">DER</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dinâmicos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="valDados.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="calcIMC.html">Calculo de IMC</a></li>
+              <li><a class="dropdown-item" href="calcComp.html">Calculo de Juros Compostos</a></li>
+              <li><a class="dropdown-item" href="compPrecos.html">Composição de Preços</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="cssDL.html">CSS Dark/Light</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div><p></p></div>
+  <div class="container col-6 border border-2">
+    <div class="text-center">
+      <h5>CADASTRO PESSOAL</h5>
+    </div>
+    <form action="" method="post">
+
+      <label for="">NOME</label>
+      <input type="text" name="nome" id="nome" class="form-control" required maxlength="50" placeholder="Nome completo...">
+      
+      <label for="">CPF</label>
+      <input type="text" name="cpf" id="cpf" class="form-control" required maxlength="14" placeholder="xxx.xxx.xxx-xx" >
+
+
+      <label for="">ESTADO CIVIL</label>
+      <select name="etCivil" id="etCivil" class="form-control" required>
+        <option value="" selected>Selecione...</option>
+        <option value="">Solteiro</option>
+        <option value="">Casado</option>
+        <option value="">Divorciado</option>
+        <option value="">Separado</option>
+        <option value="">Viúvo</option>
+      </select>
+
+      <label for="">ENDEREÇO</label>
+      <input type="text" name="endereco" id="endereco" class="form-control" maxlength="50" placeholder="Estrada Buenas Tardes N. 355">
+
+      <label for="">BAIRRO</label>
+      <input type="text" name="bairro" id="bairro" class="form-control" maxlength="30" placeholder="Logo abaixo do morro do macaco">
+
+      <label for="">CEP</label>
+      <input type="text" name="cep" id="cep" class="form-control" maxlength="9" placeholder="00000-000">
+
+      <label for="">UF</label>
+      <select name="uf" id="uf" class="form-control" required>
+        <option value="" selected>Selecione...</option>
+        <option value="" >AC</option>
+        <option value="" >AL</option>
+        <option value="" >AP</option>
+        <option value="" >AM</option>
+        <option value="" >BA</option>
+        <option value="" >CE</option>
+        <option value="" >DF</option>
+        <option value="" >ES</option>
+        <option value="" >GO</option>
+        <option value="" >MA</option>
+        <option value="" >MT</option>
+        <option value="" >MS</option>
+        <option value="" >MG</option>
+        <option value="" >PA</option>
+        <option value="" >PB</option>
+        <option value="" >PR</option>
+        <option value="" >PE</option>
+        <option value="" >PI</option>
+        <option value="" >RJ</option>
+        <option value="" >RN</option>
+        <option value="" >RS</option>
+        <option value="" >RO</option>
+        <option value="" >RR</option>
+        <option value="" >SC</option>
+        <option value="" >SP</option>
+        <option value="" >SE</option>
+        <option value="" >TO</option>
+      </select>
+
+      <label for="">CIDADE</label> 
+      <input type="text" name="city" id="city" class="form-control" required maxlength="30" placeholder="São Paulo/Rio de Janeiro/Bahia...">
+
+      <label for="">TELEFONE</label>
+      <input type="text" name="tel" id="tel" class="form-control" required maxlength="13" placeholder="00 90123-4568">
+
+      <label for="">E-MAIL</label>
+      <input type="text" name="email" id="email" class="form-control" required maxlength="50" placeholder="seuemail.naoseiqual@gmail.com">
+      
+      <div><p></p></div>
+      <input type="submit" class="btn btn-success container">
+    </form>
+  </div>
+  
+</body>
+</html>
